@@ -1,0 +1,173 @@
+#education {
+    background-color: var(--bg-light);
+    padding: 5rem 2rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#education .subtitle {
+    background-color: var(--bg-dark);
+    color: var(--main-blue);
+    font-size: 1rem;
+    width: fit-content;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+
+#education header {
+    width: 100%;
+}
+
+#education header h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+#education .description {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    color: #b7b9be;
+    margin-bottom: 4rem;
+}
+
+#education_card {
+    position: relative;
+    padding-bottom: 3rem;
+    border-radius: 1rem;
+    max-width: 45rem;
+    height: 40rem;
+}
+
+#education_gradient {
+    position: absolute;
+    background: linear-gradient(to top, #071327 50%, transparent 100%);
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    border-radius: 1rem;
+}
+
+#education_card_content {
+    padding: 0 2rem;
+}
+
+#education_ifpr {
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 1rem;
+}
+
+#education_top_card {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    z-index: 3;
+    position: relative;
+    padding-top: 22rem;
+    width: 100%;
+}
+
+#education_cap_conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem 1rem;
+    background-color: #2A354B;
+    border-radius: .5rem;
+    width: 8rem;
+}
+
+#education_studant_cap {
+    width: 3rem; 
+}
+
+#education_college_title {
+ font-size: 1.7rem;
+}
+
+#education_course_title {
+ font-size: 1.2rem;
+ color: var(--main-blue);
+}
+
+#education li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    z-index: 3;
+}
+
+#education li p {
+    font-size: 1.4rem;
+    color: #C4C6CC;
+    z-index: 3;
+}
+
+#education li img {
+    height: 2rem;
+    z-index: 3;
+}
+
+#education ul {
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (max-width: 770px) {
+   #education_ifpr {
+        margin-top: 2rem;
+   }
+
+   #education_top_card {
+    padding-top: 20rem;
+   }
+}
+
+@media (max-width: 480px) {
+    #education_top_card {
+        padding-top: 80%;
+    }
+
+    #education_college_title {
+        font-size: 1rem;
+    }
+
+    #education_card {
+        height: 30rem;
+    }
+
+    #education_card ul p {
+        font-size: 1rem;
+    }
+
+    #education_course_title {
+        font-size: .7rem;
+    }
+
+    #education header h1 {
+        font-size: 2rem;
+    }
+
+    #education .description {
+        margin: 0;
+        margin-bottom: 3rem;
+    }
+
+    #education_cap_conteiner {
+        width: 4rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+    #education_card {
+        width: 100%;
+    }
+}

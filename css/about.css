@@ -1,0 +1,136 @@
+#about {
+    background-color: var(--bg-dark);
+    padding: 5rem 2rem;  
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-image:
+        radial-gradient(circle, #1F2A3F 1px, transparent 1px),
+        radial-gradient(circle, #1F2A3F 1px, transparent 1px);
+
+    /* background-size: 80px 80px;
+    background-position: 0 0, 40px 40px; */
+
+    background-size: 30px 30px;
+    background-position: 0 0, 30px 30px;
+}
+
+#about div {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+#about h1 {
+    font-size: 4rem;
+    margin: 0rem;
+}
+
+#about span {
+    color:#00DAF3;
+}
+
+#about p {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #b7b9be;
+}
+
+#about header p {
+    font-size: 1rem;
+    letter-spacing: .2rem;
+    margin-bottom: 1rem;
+    color: #00DAF3;
+}
+
+#about nav {
+    display: flex;
+    gap: 2rem;
+}
+
+#about a {
+    background-color: #1F2A3F;
+    padding: 1rem 2rem;
+    border-radius: .3rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+#about a.active {
+    background-color: #00DAF3;
+    color: #1F2A3F;
+}
+
+@media (max-width: 1300px) {
+    #about {
+        flex-direction: column;  
+    }
+
+    #about div {
+        order: 2;
+        width: 100%;
+    }
+
+    #about img {
+        order: 1;
+        height: 20rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #about {
+        flex-direction: column;  
+    }
+
+    #about div {
+        width: 100%;
+        padding: 0 2rem;
+        order: 2;
+    }
+
+    #about p {
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+    }
+
+    #about img {
+        height: 15rem;
+        order: 1;
+        margin-bottom: 2rem;
+    }
+
+    #about h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 474px) {
+    #about nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about nav a {
+        text-align: center;
+    }
+}
+
+@media (max-width: 380px) {
+    #about img {
+        transform: scale(.9);
+        z-index: 0;
+    }
+
+    #about h1 {
+        font-size: 1.7rem;
+    }
+
+    #about div {
+        padding: 5rem 1rem;
+    }
+}

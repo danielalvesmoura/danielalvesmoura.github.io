@@ -1,0 +1,41 @@
+* {
+    font-family: "Space Grotesk", sans-serif;
+    color: white;
+    box-sizing: border-box; 
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body, p {
+    margin: 0;
+}
+
+body {
+    background-color: #030B1D;
+}
+
+@media (max-width: 995px) {
+    main {
+        padding-bottom: 2.5rem;
+    }
+}
+
+.bg-texture {
+    background-image:
+        radial-gradient(circle, #1F2A3F 1px, transparent 1px),
+        radial-gradient(circle, #1F2A3F 1px, transparent 1px);
+
+    background-size: 30px 30px;
+    background-position: 0 0, 30px 30px;
+}

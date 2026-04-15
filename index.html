@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KINETIC_ARCHITECT</title>
+
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/education.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/github.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head> 
+<body>
+    <header id="navbar">
+        <h1>DANIEL ALVES MOURA</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#about" data-i18n="header_about" class="active nav_link"></a></li>
+                <li><a href="#projects" data-i18n="header_projects" class="nav_link"></a></li>
+                <li><a href="#skills" data-i18n="header_skills" class="nav_link"></a></li>
+                <li><a href="#education" data-i18n="header_education" class="nav_link"></a></li>
+                <li><a href="#contact" data-i18n="header_contact" class="nav_link"></a></li>
+            </ul>
+        </nav>
+
+        <button onclick="changeLanguage()">
+            <span id="btn_pt" class="active">PT</span>
+            <span id="btn_en">EN</span>
+            
+        </button>
+        
+        
+    </header>
+
+    <main>
+        <section id="about">
+            <div>
+                <header>
+                    <p data-i18n="about_subtitle" class="subtitulo"></p>
+                    <h1 data-i18n="about_title"></h1>
+                </header>
+
+                <p data-i18n="about_description"></p>
+
+                <nav>
+                    <a class="active" data-i18n="about_see_projects"></a> 
+                    <a data-i18n="about_curriculum"></a>
+                </nav>
+            </div>
+            
+            <figure>
+                <img src="assets/img/profile_picture.jpg" data-i18n="about_img_alt" alt="">
+            </figure>
+        </section>
+
+        <section id="projects">
+            
+            <header>
+                <p data-i18n="projects_header_title"></p>
+                <h1 data-i18n="projects_header_subtitle"></h1>
+            </header>
+
+            <div id="projects-cards">
+                <article>
+                    <div id="projects-card-description">
+                        <header>
+                            <p data-i18n="projects_memory_subtitle"></p>
+                            <h2 data-i18n="projects_memory_title"></h2>
+                        </header>
+
+                        <p data-i18n="projects_memory_description"></p>
+                        
+                        <nav>
+                            <a data-i18n="projects_see_details"></a>
+                        </nav>
+                    </div>
+
+                    <figure>
+                        <img id="img_memory" src="assets/img/memory_game.png" data-i18n="projects_memory_alt" alt="">
+                    </figure>
+                </article>
+
+                <article>
+                    <div id="projects-card-description">
+                        <header>
+                            <p data-i18n="projects_portalx_subtitle"></p>
+                            <h2 data-i18n="projects_portalx_title"></h2>
+                        </header>
+
+                        <p data-i18n="projects_portalx_description"></p>
+                        
+                        <nav>
+                            <a data-i18n="projects_see_details"></a>
+                        </nav>
+                    </div>
+
+                    <figure>
+                        <img id="img_portalx" src="assets/img/portalx.png" data-i18n="projects_portalx_alt" alt="">
+                    </figure>
+                </article> 
+
+                <article id="github_card">
+                    <header>
+                        <p>GITHUB</p>
+                        <h2>github.com/danielalvesmoura</h2>
+                    </header>
+
+                    <p>Seguidores: <span id="followers"></span></p>
+                    <p>Repositórios: <span id="repos-count"></span></p>
+                    
+
+                    <h2>Repositórios</h2>
+                    <ul id="repos"></ul>
+                </article>
+            </div>
+
+        </section>
+
+        <section id="skills">
+            <header>
+                <p data-i18n="skills_subtitle"></p>
+                <h1 data-i18n="skills_title"></h1>
+            </header>
+
+            <ul>
+                <li class="skills_card">
+                    <img src="assets/img/icon_react.png" data-i18n="skills_react_alt" alt="">
+                    <p>REACT</p>
+                </li>
+                <li class="skills_card">
+                    <img src="assets/img/icon_python.png" data-i18n="skills_python_alt" alt="">
+                    <p>PYTHON</p>
+                </li>
+                <li class="skills_card">
+                    <img src="assets/img/icon_database.png" data-i18n="skills_database_alt" alt="">
+                    <p>SQL</p>
+                </li>
+                <li class="skills_card">
+                    <img src="assets/img/icon_java.png" data-i18n="skills_java_alt" alt="">
+                    <p>JAVA</p>
+                </li>
+                <li class="skills_card">
+                    <img src="assets/img/icon_html.png" data-i18n="skills_html_alt" alt="">
+                    <p>HTML</p>
+                </li>
+                <li class="skills_card">
+                    <img src="assets/img/icon_css.png" data-i18n="skills_css_alt" alt="">
+                    <p>CSS</p>
+                </li>
+                <li class="skills_card">
+                    <img src="assets/img/icon_js.png" data-i18n="skills_js_alt" alt="">
+                    <p>JAVASCRIPT</p>
+                </li>
+            </ul>
+        </section>
+            
+        <section id="education">
+            <header>
+                <p data-i18n="education_subtitle" class="subtitle"></p>
+                <h1 data-i18n="education_title"></h1>
+                <p data-i18n="education_description" class="description"></p>
+            </header>
+
+            <div id="education_card">
+                <img id="education_ifpr" src="assets/img/ifpr.png" data-i18n="education_ifpr_alt" alt="">
+                <span id="education_gradient"></span>
+
+                <div id="education_card_content">
+                    <div id="education_top_card">
+                        <div id="education_cap_conteiner">
+                            <img id="education_studant_cap" src="assets/img/studant_cap.png" data-i18n="education_studant_cap_alt" alt="">
+                        </div>
+                        <div>
+                            <p data-i18n="education_college_title" id="education_college_title"></p>
+                            <p data-i18n="education_course_title" id="education_course_title"></p>
+                        </div>   
+                    </div>
+
+                    <ul>
+                        <li>
+                            <img src="assets/img/icon_calendar.png" alt="" data-i18n="education_calendar_alt">
+                            <p data-i18n="education_course_duration"></p>
+                        </li>
+
+                        <li>
+                            <img src="assets/img/icon_location.png" alt="" data-i18n="education_location_alt">
+                            <p data-i18n="education_course_location"></p>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+
+        </section>
+
+        <section id="contact" aria-labelledby="contact_title">
+
+            <article>
+                <header>
+                    <p id="contact_subtitle" data-i18n="contact_subtitle"></p>
+                    <h1 data-i18n="contact_title"></h1>
+                    <p data-i18n="contact_description" id="contact_description"></p>
+                </header>
+
+                <ul>
+                    <li>
+                        <img src="assets/img/icon_email.png" alt="" data-i18n="contact_email_alt">
+                        <div>
+                            <p class="contact-card-title" data-i18n="contact_email_title">E-mail</p>
+                            <p class="contact-card-text">danielalvesmoura2006@gmail.com</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/img/icon_phone.png" alt="" data-i18n="contact_phone_alt">
+                        <div>
+                            <p class="contact-card-title" data-i18n="contact_phone_title">Telefone</p>
+                            <p class="contact-card-text">(44) 98459-8683</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/img/icon_location_blue.png" alt="" data-i18n="contact_location_alt">
+                        <div>
+                            <p class="contact-card-title" data-i18n="contact_location_title">Localização</p>
+                            <p class="contact-card-text" data-i18n="contact_location_text">Paraíso do Norte, Paraná, Brasil</p>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+
+
+            <article id="contact_form">
+                <form id="form_container" novalidate>
+                    <fieldset class="form_content">
+                        <legend id="form_title" data-i18n="form_title"></legend>
+                        
+                        <div class="form_field">
+                            <label for="name" data-i18n="form_name_label"></label>
+                            <input id="name" name="from_name" type="text" data-i18n="form_name_placeholder" placeholder="Digite seu nome completo" required aria-describedby="name_error" />
+                            <small class="input_error" id="name_error" aria-live="polite"></small>
+                        </div>
+
+                        <div class="form_field">
+                            <label for="email" data-i18n="form_email_label"></label>
+                            <input id="email" name="reply_to" type="email" data-i18n="form_email_placeholder" placeholder="exemplo@email.com" required aria-describedby="email_error" />
+                            <small class="input_error" id="email_error" aria-live="polite"></small>
+                        </div>
+                        </div>
+
+                        <div class="form_field">
+                            <label for="subject" data-i18n="form_subject_label"></label>
+                            <input id="subject" name="subject" type="text" data-i18n="form_subject_placeholder" placeholder="Ex: Dúvida sobre a plataforma" required aria-describedby="subject_error" />
+                            <small class="input_error" id="subject_error" aria-live="polite"></small>
+                        </div>
+
+                        <div class="form_field">
+                            <label for="message" data-i18n="form_message_label"></label>
+                            <textarea id="message" name="message" data-i18n="form_message_placeholder" placeholder="Descreva suas necessidades..." required aria-describedby="message_error"></textarea>
+                            <small class="input_error" id="message_error" aria-live="polite"></small>
+                        </div>
+
+                        <button type="submit" data-i18n="form_submit_button"></button>
+                        <small id="submit_message" aria-live="polite"></small>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+
+        <footer>
+            <h2>DANIEL ALVES MOURA</h2>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://github.com/danielalvesmoura" target="_blank">
+                            <img src="assets/img/icon_github.png" alt="" data-i18n="footer_github_alt">
+                            GITHUB
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </main>
+
+    <nav id="navbar_mobile">
+        <ul>
+            <li><a href="#about" data-i18n="header_about" class="active nav_link"></a></li>
+            <li><a href="#projects" data-i18n="header_projects" class="nav_link"></a></li>
+            <li><a href="#skills" data-i18n="header_skills" class="nav_link"></a></li>
+            <li><a href="#education" data-i18n="header_education" class="nav_link"></a></li>
+            <li><a href="#contact" data-i18n="header_contact" class="nav_link"></a></li>
+        </ul>
+    </nav>
+
+    <script type="module" src="js/translations.js"></script>
+    <script type="module" src="js/language.js"></script>
+    <script src="js/header.js"></script>=
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/github.js"></script>
+</body>
+</html>
