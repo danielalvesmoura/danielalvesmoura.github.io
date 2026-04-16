@@ -120,19 +120,25 @@
     gap: 1rem;
 }
 
-@media (max-width: 770px) {
-   #education_ifpr {
-        margin-top: 2rem;
-   }
 
-   #education_top_card {
-    padding-top: 20rem;
-   }
+
+
+
+
+
+@media (max-width: 770px) {
+    #education_ifpr {
+        margin-top: 2rem;
+    }
+
+    #education_top_card {
+        padding-top: 20rem;
+    }
 }
 
 @media (max-width: 480px) {
     #education_top_card {
-        padding-top: 80%;
+        padding-top: 50%;
         display: flex;
         flex-direction: column;
     }
@@ -146,7 +152,7 @@
     }
 
     #education_card ul p {
-        font-size: .4rem;
+        font-size: .8rem;
     }
 
     #education_course_title {
@@ -166,10 +172,14 @@
         width: 4rem;
     }
 
-}
-
-@media (max-width: 480px) {
     #education_card {
         width: 100%;
+    }
+
+}
+
+@media (max-width: 330px) {
+    #education_top_card {
+        padding-top: 80%;
     }
 }

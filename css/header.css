@@ -166,7 +166,13 @@
         padding: .7rem 1rem;
     } 
 
+    #navbar button {
+        transform: scale(0.5);
+    }
+
     #navbar_mobile a {
        font-size: .6rem;
     }
 }
+
+
