@@ -134,7 +134,13 @@
 
 @media (max-width: 361px) {
     .contact-card-text {
-        font-size: .7rem;
+        font-size: .5rem;
+    }
+}
+
+@media (max-width: 235px) {
+    .contact-card-text {
+        font-size: .3rem;
     }
 }
 

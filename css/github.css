@@ -24,6 +24,6 @@
 
 @media (max-width: 470px) {
     #github_card h2 {
-        font-size: 1rem;
+        font-size: .7rem;
     }
 }
