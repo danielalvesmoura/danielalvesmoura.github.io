@@ -11,7 +11,7 @@ fetch(`https://api.github.com/users/${username}`).then(res => res.json()).then(d
 fetch(`https://api.github.com/users/${username}/repos`).then(res => res.json()).then(repos => {
     const list = document.getElementById("repos");
 
-    repos.sort(repo => {
+    repos.forEach(repo => {
         const li = document.createElement("li");
 
         li.innerHTML = `
